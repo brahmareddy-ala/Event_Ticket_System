@@ -1,0 +1,21 @@
+{
+  "name": "event_ticket_system",
+  "version": "1.0.0",
+  "description": "event tickets using NFTs",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
+    "@truffle/hdwallet-provider": "^2.0.10",
+    "dotenv": "^16.0.1",
+    "web3": "^1.7.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "truffle-assertions": "^0.9.2"
+  }
+}
