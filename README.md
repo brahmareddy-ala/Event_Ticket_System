@@ -1,3 +1,5 @@
+# After deplyment of EvenetTicketSystem contract file please paste the deployed address into client/contracts/EventTicketSystemAddress.json file.
+
 
 Application to create events using NFT technology
 
