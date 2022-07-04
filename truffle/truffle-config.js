@@ -1,8 +1,7 @@
 const path = require("path");
 
 require('dotenv').config();
-const ropstenMnemonic = process.env["ROPSTEN_MNEMONIC"];
-const rinkebyMnemonic = process.env["RINKEBY_MNEMONIC"];
+const mnemonic = process.env["MNEMONIC"];
 const infuraKey = process.env["INFURA_KEY"];
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 
@@ -60,14 +59,14 @@ module.exports = {
       network_id: 3,
       chain_id: 3,
       provider: function() {
-        return new HDWalletProvider(ropstenMnemonic, "https://ropsten.infura.io/v3/"+ infuraKey, 0, 1);
+        return new HDWalletProvider(mnemonic, "https://ropsten.infura.io/v3/"+ infuraKey);
       }
     },
     rinkeby: {
       network_id: 4,
       chain_id: 4,
       provider: function() {
-        return new HDWalletProvider(rinkebyMnemonic, "https://rinkeby.infura.io/v3/"+ infuraKey, 0, 1);
+        return new HDWalletProvider(mnemonic, "https://rinkeby.infura.io/v3/"+ infuraKey);
       }
     },
     //
