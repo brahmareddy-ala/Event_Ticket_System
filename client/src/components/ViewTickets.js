@@ -49,7 +49,7 @@ export default function ViewTickets({eventId, nft, price, imagePath }) {
     <div className="flex justify-center">
       {allTickets.length > 0 ?
         <div className="px-5 py-3 container">
-            <h2>All Events</h2>
+            <h2>All Tickets</h2>
           <Row xs={1} md={2} lg={4} className="g-4 py-3">
             {allTickets.map((item, idx) => (
               <Col key={idx} className="overflow-hidden">
