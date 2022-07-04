@@ -1,5 +1,4 @@
-# After deplyment of EvenetTicketSystem contract file please paste the deployed address into client/contracts/EventTicketSystemAddress.json file.
-
+# Network: Ropsten, Contract Address: 0xDeDeb1df9b1a3e22c7939b7a744C6775FB8256d1
 
 Application to create events using NFT technology
 
